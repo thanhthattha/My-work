@@ -1,0 +1,78 @@
+body {
+  background-color: #191a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 50px;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  border: none;
+  outline: none;
+  position: relative;
+}
+.btn span {
+  position: absolute;
+  background-color: #6a5af9;
+  display: block;
+  transition: all 0.25s linear;
+}
+.btn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+}
+.btn span:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0;
+  transition-delay: 0.25s;
+}
+.btn span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  transition-delay: 0.5s;
+}
+.btn span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  transition-delay: 0.75s;
+}
+.btn:hover span:nth-child(odd) {
+  width: 100%;
+}
+.btn:hover span:nth-child(even) {
+  height: 100%;
+}
+.btn:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #6a5af9;
+  transition: width 0.25s linear 1s;
+}
+.btn:hover::before {
+  width: 100%;
+}
+@media screen and (min-width: 400px) {
+  * {
+    line-height: 1.4;
+  }
+}

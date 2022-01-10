@@ -1,0 +1,159 @@
+html {
+  background-image: linear-gradient(135deg, #fcbb60, #ffcc6f);
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  border-radius: 1;
+  margin-top: 1rem;
+  width: 45rem;
+  min-height: 20rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  flex-basis: 12rem;
+  background-color: rgba(255, 73, 36, 0.83);
+  text-align: center;
+  position: relative;
+}
+header .logo {
+  position: relative;
+  top: 4rem;
+  background: white;
+  border: 7px solid white;
+  border-radius: 10rem;
+}
+
+.order {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 0 0 1rem 1rem;
+  padding-top: 2rem;
+}
+.order .header {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 1.7rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.order button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.order .order-item {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.order .order-item button {
+  padding: 0.5rem;
+  width: 20px;
+  height: 20px;
+  line-height: 10px;
+  font-size: 2rem;
+}
+.order .order-item button.btn-delete {
+  font-size: 1rem;
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.order .order-item .item-name {
+  flex-basis: 20rem;
+}
+.order .order-item .item-quanlity {
+  flex-basis: 10rem;
+  margin-top: -10px;
+}
+.order .order-item .item-quanlity .dec {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.order .order-item .item-quanlity input {
+  margin-left: 0.5em;
+  width: 30px;
+  position: relative;
+  top: -2px;
+  border: none;
+}
+.order .order-item .item-quanlity .inc {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.order .order-item .item-price {
+  margin-left: auto;
+  margin-top: -4px;
+}
+.order .order-summary {
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: #f4f4f6;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.order .order-summary .money {
+  float: right;
+}
+.order #btn-add {
+  margin-top: 1.5rem;
+  border: 1px solid gray;
+  width: 18rem;
+  background: white;
+}
+.order #btn-checkout {
+  width: 100%;
+  background: #ff6144;
+  color: white;
+}
+.responsive,
+.responsive-btn {
+  display: none;
+}
+@media (max-width: 414px) {
+  body {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  div,
+  header {
+    display: none;
+  }
+  .responsive,
+  .responsive-btn {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10%;
+  }
+  .responsive-btn {
+    height: 5rem;
+    width: min-content;
+    margin: 5rem auto auto auto;
+    padding: 10px;
+    border: 1px solid #191a2e;
+    background-color: transparent;
+    z-index: 10;
+  }
+}

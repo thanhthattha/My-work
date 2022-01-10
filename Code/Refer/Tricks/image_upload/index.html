@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Img Upload</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="image">
+          <img src="" alt="Image" />
+        </div>
+        <div class="content">
+          <div class="icon">
+            <i class="fa fa-cloud-upload-alt"></i>
+          </div>
+          <div class="text">Chọn Hình Ảnh Bằng Nút Bên Dưới</div>
+        </div>
+        <div id="cancel-btn">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="file-name">Tên File</div>
+      </div>
+      <button onclick="defaultBtnActive()" id="custom-btn">
+        Chọn Hình Ảnh
+      </button>
+      <input id="default-btn" type="file" hidden />
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

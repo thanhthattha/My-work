@@ -1,0 +1,139 @@
+:root {
+  --gradient-dir1: to right bottom;
+  --gradient-dir2: to left top;
+  --gradient-dir3: to right top;
+  --weight: 600;
+}
+.mtk10,
+.mtk15 {
+  color: transparent;
+  background-image: linear-gradient(to top, #ff3163, #ff02e9, #ff890a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: var(--weight);
+}
+.mtk5 {
+  color: transparent;
+  background-image: linear-gradient(
+    var(--gradient-dir2),
+    #20e3b2,
+    #20e1e2,
+    #20e3b3
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-family: "Dank Mono";
+}
+.mtk16 {
+  color: transparent;
+  background-image: linear-gradient(
+    to right bottom,
+    #d66efd,
+    #6a5af9,
+    #d66eff,
+    #6a5afd
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: var(--weight);
+}
+.mtk9,
+.mtk17 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir1), #0c97fa, #16e1f5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 560;
+}
+.mtk18 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir2), #b0beff, #fed9ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-style: normal;
+  font-weight: var(--weight);
+}
+.mtk3 {
+  color: transparent;
+  background-image: linear-gradient(to right top, #c29ffd, #ffb4dc, #fef0d1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: var(--weight);
+}
+.mtk7 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir1), #fc6c8f, #ffb86c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: var(--weight);
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before {
+  border: 0;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #f62682, #ff2ced, #ff2ced);
+}
+.monaco-workbench
+  .part.editor
+  .content
+  .editor-group-container
+  .title
+  .tabs-container
+  .tab.active.tab-border-top
+  > .tab-border-top-container {
+  background-size: 400% 400%;
+  background-image: linear-gradient(
+    -45deg,
+    #fc6c8f,
+    #ff2ced,
+    #ffb86c,
+    #2cccff,
+    #20e3b2,
+    #ffcc70,
+    #c850c0,
+    #4158d0
+  );
+  animation: gradient 5s ease-in-out infinite;
+  height: 3px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  background-image: linear-gradient(var(--gradient-dir2), #fc6c8f, #ff2ced);
+}
+.monaco-editor .cursors-layer .cursor {
+  background-image: linear-gradient(to bottom, #d66efd, #fc6c8f, #ff2ced);
+}
